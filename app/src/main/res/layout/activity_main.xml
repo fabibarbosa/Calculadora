@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey"
+    >
+
+
+    <EditText
+        android:id="@+id/currentMathExpression"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/currentResult"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:gravity="end"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/btn"
+                android:text="@string/btn_clear"
+                android:textColor="@color/danger"
+                />
+
+            <Button
+                android:id="@+id/btnOpenParenthesis"
+                style="@style/btn"
+                android:text="@string/btn_open_parenthesis" />
+
+            <Button
+                android:id="@+id/btnCloseParenthesis"
+                style="@style/btn"
+                android:text="@string/btn_close_parenthesis" />
+
+            <Button
+                android:id="@+id/btnDivision"
+                style="@style/btn"
+                android:text="@string/btn_division"
+                app:backgroundTint="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnSeven"
+                style="@style/btn"
+                android:text="@string/btn_7" />
+
+            <Button
+                android:id="@+id/btnEight"
+                style="@style/btn"
+                android:text="@string/btn_8" />
+
+            <Button
+                android:id="@+id/btnNine"
+                style="@style/btn"
+                android:text="@string/btn_9" />
+
+            <Button
+                android:id="@+id/btnMultiplication"
+                style="@style/btn"
+                android:text="@string/btn_multiplication"
+                app:backgroundTint="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnFor"
+                style="@style/btn"
+                android:text="@string/btn_4" />
+
+            <Button
+                android:id="@+id/btnFive"
+                style="@style/btn"
+                android:text="@string/btn_5" />
+
+            <Button
+                android:id="@+id/btnSix"
+                style="@style/btn"
+                android:text="@string/btn_6" />
+
+            <Button
+                android:id="@+id/btnSubtraction"
+                style="@style/btn"
+                android:text="@string/btn_subtraction"
+                app:backgroundTint="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnOne"
+                style="@style/btn"
+                android:text="@string/btn_1"
+                />
+
+            <Button
+                android:id="@+id/btnTwo"
+                style="@style/btn"
+                android:text="@string/btn_2" />
+
+            <Button
+                android:id="@+id/btnThree"
+                style="@style/btn"
+                android:text="@string/btn_3" />
+
+            <Button
+                android:id="@+id/btnAddition"
+                style="@style/btn"
+                android:text="@string/btn_addition"
+
+                app:backgroundTint="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnZero"
+                style="@style/btn"
+                android:layout_weight="2"
+                android:text="@string/btn_0"
+                android:onClick="operationFunction"
+               />
+
+            <Button
+                android:id="@+id/btnComma"
+                style="@style/btn"
+                android:text="@string/btn_comma" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/btn"
+                android:text="@string/btn_equal"
+                app:backgroundTint="@color/green"
+                />
+
+
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
